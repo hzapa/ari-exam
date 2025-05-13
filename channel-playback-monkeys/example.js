@@ -45,8 +45,6 @@ function clientLoaded (err, client) {
       });
     }
   }
-
-
   // handler for StasisEnd event
   function stasisEnd(event, channel) {
     console.log(util.format(
