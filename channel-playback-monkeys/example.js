@@ -47,16 +47,6 @@ function clientLoaded (err, client) {
   }
 
 
-  /* channel.hangup(function(err) {
-    if (err) {
-      console.error('Error colgando el canal:', err.message);
-      // Aquí decides qué hacer: registrar, notificar, pero NO terminar la app
-      return;
-    }
-    console.log('Canal colgado correctamente');
-  });
-  */
-
   // handler for StasisEnd event
   function stasisEnd(event, channel) {
     console.log(util.format(
