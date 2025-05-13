@@ -33,6 +33,8 @@ function clientLoaded (err, client) {
       console.log(util.format(
           'Monkeys successfully vanquished %s; hanging them up',
           channel.name));
+// Modificacion del codigo  para evitar que se termina la ejecucion
+// Modify in hagnup function to aboid  end of the app for  error
       channel.hangup(function(err) {
         if (err) {
           console.error('Error colgando el canal:', err.message);
